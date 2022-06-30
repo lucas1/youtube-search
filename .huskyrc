@@ -1,0 +1,2 @@
+export NPM_DIR="$HOME/.npm"
+[ -s "$NPM_DIR/npm.sh" ] && \. "$NPM_DIR/npm.sh"
