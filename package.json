@@ -11,7 +11,12 @@
     "youtube-search"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
+    "test:verbose": "jest --passWithNoTests",
+    "test:unit": "npm test -- --watch -c jest-unit-config.js",
+    "test:integration": "npm test -- --watch -c jest-integration-config.js",
+    "test:staged": "npm test -- --findRelatedTests",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/jest": "^28.1.4",
