@@ -6,10 +6,12 @@ export default {
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
   roots: [
-    '<rootDir>/src'
+    '<rootDir>/src',
+    '<rootDir>/tests'
   ],
   testEnvironment: 'node',
   transform: {
     '.+\\.ts$': 'ts-jest'
-  }
+  },
+  testRegex: '<rootDir>/tests/\\.(test|spec)\\.ts?$'
 }
