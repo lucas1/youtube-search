@@ -13,5 +13,5 @@ export default {
   transform: {
     '.+\\.ts$': 'ts-jest'
   },
-  testRegex: '<rootDir>/tests/\\.(test|spec)\\.ts?$'
+  testRegex: './tests/.+\\.(test|spec)\\.ts$'
 }
